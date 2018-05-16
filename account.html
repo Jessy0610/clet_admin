@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>CLET_admin</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CLET">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:secure_url" content="">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:description” content=“" />
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="CLET">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:domain" content="CLET">
+    <meta property="twitter:image" content="">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/">
+    <link rel="stylesheet" href="/assets/css/account_style.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+<!--   	<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/dist/script.min.js"></script>
+    <script type="text/javascript" src="/assets/js/custom.js"></script>
+</head>
+<body>
+	<div class="wrap-body">
+		<!--header 시작-->
+		<div id="wrap-header">
+			<div class="header-inner clear">
+				<ul class="nav khula clear fl">
+					<li class="fl">
+						<a href="/dashboard.html">DASHBOARD</a>
+					</li>
+					<li class="fl on">
+						<a href="/account.html">ACCOUNT</a>
+					</li>
+					<li class="fl">
+						<a>CHATROOM</a>
+					</li>
+					<li class="fl">
+						<a href="/banner.html">BANNER</a>
+					</li>
+					<li class="fl">
+						<a href="/board.html">BOARD</a>
+					</li>
+				</ul>
+				<div class="header-logout fr clear nanum">
+					<p class="show-member fl">
+						<img src="/assets/images/user.svg" class="center-y">
+						<a href="#">관리자 A</a>
+					</p>
+					<button type="submit" class="logout-btn fr">로그아웃</button>
+				</div>
+			</div>
+		</div>
+		<!--header 끝-->
+		<div id="wrap-section" class="clear nanum">
+			<!--lnb 시작-->
+			<ul class="lnb fl">
+				<li class="on">
+					<a href="#">회원계정관리</a>
+				</li>
+			</ul>
+			<!--lnb 끝-->
+			<!--panel 시작-->
+			<div class="panel fl">
+				<h2>회원계정관리</h2>
+				<div class="account-box">
+					<!--account-box 상단 시작-->
+					<ul class="tap-menu clear fl">
+						<li class="on" data-cate="member">전체보기</li>
+						<li data-cate="admin">운영자회원</li>
+						<li data-cate="general">일반회원</li>
+						<li data-cate="withdrawal">탈퇴회원</li>
+					</ul>
+					<form method="post" class="clear fr">
+						<select class="fl">
+							<option selected="selected" disabled>검색조건</option>
+							<option value="조건1">아이디</option>
+							<option value="조건2">이메일주소</option>
+						</select>
+						<div class="input-group clear fr">
+							<input type="text" value="" class="form-control search-box">
+								<button type="submit" class="btn btn-primary">
+									<img src="/assets/images/search.svg">
+								</button>
+						</div>
+					</form>
+					<!--account-box 상단 끝-->
+					<!--회원계정 목록 table 시작-->
+					<div class="panel-body">
+						<table class="account-table">
+							<thead>
+								<tr>
+									<th>가입일시</th>
+									<th>이메일주소</th>
+									<th>아이디</th>
+									<th>회원유형</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="admin">
+									<td>2018.04.05 19:19:19</td>
+									<td>joon@mail.com</td>
+									<td>joon</td>
+									<td>관리자</td>
+									<td>
+										<a class="member-page-btn">
+											<span class="member-page-btn">상세보기</span>
+										</a>
+									</td>
+								</tr>
+								<tr class="general">
+									<td>2018.04.05 19:19:19</td>
+									<td>moon@mail.com</td>
+									<td>moon</td>
+									<td>일반</td>
+									<td>
+										<a class="member-page-btn">
+											<span class="member-page-btn">상세보기</span>
+										</a>
+									</td>
+								</tr>
+								<tr class="withdrawal">
+									<td>2018.04.05 19:19:19</td>
+									<td>yoon@mail.com</td>
+									<td>yoon</td>
+									<td>탈퇴회원</td>
+									<td>
+										<a class="member-page-btn">
+											<span class="member-page-btn">상세보기</span>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--회원계정 목록 table 끝-->
+				</div>
+<!--
+				<ul class="page-num clear">
+					<li>&#60</li>
+					<li class="on">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>></li>
+				</ul>
+-->
+			</div>
+			<!--account-box 끝-->
+			<!--member-page 시작-->
+			<div class="member-page center-x">
+				<h2>회원정보</h2>
+				<div class="profile-top clear">
+					<img class="fl profile-img">
+					<table class="profile-table fr">
+						<tr>
+							<td>가입일시</td>
+							<td class="profile-date">2018. 04. 05 19:19:19</td>
+						</tr>
+						<tr>
+							<td>아이디</td>
+							<td class="profile-id">joon</td>
+						</tr>
+						<tr>
+							<td>이메일주소</td>
+							<td class="profile-email">joon@email.com</td>
+						</tr>
+						<tr>
+							<td>회원유형</td>
+							<td>
+								<p class="profile-cate">관리자</p>
+							</td>
+							<td>
+								<button type="submit" class="close-admin-btn">
+									<p>관리자해지</p>
+								</button>
+							</td>
+						</tr>
+						<tr class="unreg-date">
+							<td>탈퇴일시</td>
+							<td class="unreg_d"></td>
+						</tr>
+					</table>
+				</div>
+				<div class="wallet-add clear">
+					<h3 class="fl">가상화폐지갑</h3>
+					<table class="wallet-table fr">
+						<tr>
+							<td class="wallet">UUNIO</td>
+							<td class="add">0xb59940AD3Ef3cAF92DA5E34B045505a626992cDB</td>
+						</tr>
+						<tr>
+							<td class="wallet">BTC</td>
+							<td class="add">0xb59940AD3Ef3cAF92DA5E34B045505a626992cDB</td>
+						</tr>
+						<tr>
+							<td class="wallet">ETH</td>
+							<td class="add">0xb59940AD3Ef3cAF92DA5E34B045505a626992cDB</td>
+						</tr>
+						<tr>
+							<td class="wallet">QTUM</td>
+							<td class="add">0xb59940AD3Ef3cAF92DA5E34B045505a626992cDB</td>
+						</tr>
+					</table>
+				</div>
+				<div class="chatroom-info clear">
+					<h3 class="fl">운영하는 단톡방 정보</h3>
+					<table class="chatroom-table fr">
+						<tr>
+							<td>단톡방이름</td>
+							<td class="cr-name">UUNIO ICO</td>
+						</tr>
+						<tr>
+							<td>운영기간</td>
+							<td class="cr-period"><span class="init-date">2018.04.05</span> ~ <span class="close-date">2018.05.05</span></td>
+							<td rowspan="2">
+								<a href="#">상세보기</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="recent-deal">
+					<div class="heading-recent-box clear">
+						<h3 class="fl">최근거래내역</h3>
+						<a href="#" class="fr">전체보기></a>
+					</div>
+					<div class="recent-box">
+						
+					</div>
+				</div>
+				<div class="btn-section center-x clear">
+					<button type="submit" class="unregister fl">탈퇴처리</button>
+					<button type="button" class="return fl">목록으로</button>
+				</div>
+			</div>
+			<!--member-page 끝-->
+			<!--관리자해지 팝업 시작-->
+			<div class="popup_btn2 close-admin-acc center-x">
+				<p>
+					<span class="member-name">joon</span>님을 관리자에서<br>해지하시겠습니까?
+				</p>
+				<button type="submit" class="close-admin">해지</button>
+				<button type="button" class="close-popup">취소</button>
+			</div>
+			<!--관리자해지 팝업 끝-->
+			<!--관리자등록 팝업 시작-->
+			<div class="popup_btn2 reg-admin-acc popup center-x">
+				<p>
+					<span class="member-name">joon</span>님을<br> 관리자로 등록하시겠습니까?
+				</p>
+				<button type="submit" class="reg-admin">등록</button>
+				<button type="button" class="close-popup">취소</button>
+			</div>
+			<!--관리자등록 팝업 끝-->
+			<!--관리자해지 사유 팝업 시작-->
+			<div class="popup_textfield close-admin-confirm center-all">
+				<h2>관리자계정 해지 사유 입력</h2>
+				<img src="/assets/images/close.svg" class="close-popup">
+				<form method="post" class="center-x">
+					<textarea cols="60" rows="12" autofocus required></textarea>
+					<p>50/100자</p>
+					<button type="submit" class="send-mail center-x">이메일로 전송</button>
+				</form>
+			</div>
+			<!--관리자해지 사유 팝업 끝-->
+			<!--회원유형 변경완료 팝업 시작-->
+			<div class="popup_confirm change-cate center-all">
+				<p>
+					<span class="member-name">joon</span>님의 회원유형이<br>"<span class="member-cate">일반회원</span>"으로 변경되었습니다.
+				</p>
+				<button type="button" class="close-popup center-x">확인</button>
+			</div>
+			<!--회원유형 변경완료 팝업 끝-->
+			<!--탈퇴처리 팝업 시작-->
+			<div class="popup_btn2 unreg-acc center-x">
+				<p>
+					<span class="member-name">joon</span>님의 계정을<br>탈퇴처리 하시겠습니까?
+				</p>
+				<button type="submit" class="unregister-btn">탈퇴</button>
+				<button type="button" class="close-popup">취소</button>
+			</div>
+			<!--탈퇴처리 팝업 끝-->
+			<!--탈퇴사유 팝업 시작-->
+			<div class="popup_textfield unreg-txt center-all">
+				<h2>탈퇴처리 안내 및 탈퇴 사유 입력</h2>
+				<img src="/assets/images/close.svg" class="close-popup">
+				<form method="post" class="center-x">
+					<textarea cols="60" rows="12" autofocus required></textarea>
+					<p>50/100자</p>
+					<button type="submit" class="send-mail center-x">이메일로 전송</button>
+				</form>
+			</div>
+			<!--탈퇴사유 팝업 끝-->
+			<!--탈퇴완료 팝업 시작-->
+			<div class="popup_confirm unreg-confirm center-all">
+				<p>
+					<span class="member-name">joon</span>님의 계정이<br>탈퇴처리 되었습니다.
+				</p>
+				<button type="button" class="close-popup center-x">확인</button>
+			</div>
+			<!--탈퇴완료 팝업 끝-->
+		</div>
+		<div id="wrap-footer">
+			<div class="footer-inner khula">
+				<p>Copyright.</p>
+			</div>
+		</div>
+	</div>
+</body>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>CLET_admin</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CLET">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:secure_url" content="">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:description” content=“" />
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="CLET">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:domain" content="CLET">
+    <meta property="twitter:image" content="">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/">
+    <link rel="stylesheet" href="/assets/css/board_style.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/dist/script.min.js"></script>
+    <script type="text/javascript" src="/assets/js/custom.js"></script>
+</head>
+<body>
+	<div class="wrap-body">
+		<!--header 시작-->
+		<div id="wrap-header">
+			<div class="header-inner clear">
+				<ul class="nav khula clear fl">
+					<li class="fl">
+						<a href="/dashboard.html">DASHBOARD</a>
+					</li>
+					<li class="fl">
+						<a href="/account.html">ACCOUNT</a>
+					</li>
+					<li class="fl">
+						<a>CHATROOM</a>
+					</li>
+					<li class="fl">
+						<a href="/banner.html">BANNER</a>
+					</li>
+					<li class="fl on">
+						<a href="/board.html">BOARD</a>
+					</li>
+				</ul>
+				<div class="header-logout fr clear nanum">
+					<p class="show-member fl">
+						<img src="/assets/images/user.svg" class="center-y">
+						<a href="#">관리자 A</a>
+					</p>
+					<button type="submit" class="logout-btn fr">로그아웃</button>
+				</div>
+			</div>
+		</div>
+		<!--header 끝-->
+		<div id="wrap-section" class="clear nanum">
+			<!--lnb 시작-->
+			<ul class="lnb fl">
+				<li>
+					<a href="/board.html">공지&amp;이벤트</a>
+				</li>
+				<li class="on">
+					<a href="/board_terms.html">약관</a>
+				</li>
+			</ul>
+			<!--lnb 끝-->
+			<!--panel 시작-->
+			<div class="panel fl">
+				<h2>약관</h2>
+				<ul class="terms-section">
+					<li class="list-terms clear">
+						<p class="fl">CLET 이용약관</p>
+						<button type="button" class="terms-edit fr">편집하기</button>
+					</li>
+					<li class="personal-info clear">
+						<p class="fl">CLET 개인정보처리방침</p>
+						<button type="button" class="per-info-edit fr">편집하기</button>
+					</li>
+				</ul>
+				<!--terms-edit-box 시작-->
+				<div class="terms-edit-box page-box">
+					<h2>이용약관</h2>
+					<form>
+						<textarea cols="120" rows="30" name="terms"></textarea>
+						<div class="button-section clear center-x">
+							<button type="submit" class="save close-page fl">저장</button>
+							<button type="button" class="cancel close-page fr">취소</button>
+						</div>
+					</form>
+				</div>
+				<!--personal-info-edit 끝-->
+				<div class="personal-info-edit page-box">
+					<h2>개인정보처리방침</h2>
+					<form>
+						<textarea cols="120" rows="30" name="terms"></textarea>
+						<div class="button-section clear center-x">
+							<button type="submit" class="save close-page fl">저장</button>
+							<button type="button" class="cancel close-page fr">취소</button>
+						</div>
+					</form>
+				</div>
+				<!--personal-info-edit 끝-->
+			</div>
+			<!--panel 끝-->
+		</div>
+		<div id="wrap-footer">
+			<div class="footer-inner khula">
+				<p>Copyright.</p>
+			</div>
+		</div>
+	</div>
+</body>

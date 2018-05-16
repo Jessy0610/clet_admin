@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>CLET_admin</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CLET">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:secure_url" content="">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:description” content=“" />
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="CLET">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:domain" content="CLET">
+    <meta property="twitter:image" content="">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/">
+    <link rel="stylesheet" href="/assets/css/banner_style.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/dist/script.min.js"></script>
+    <script type="text/javascript" src="/assets/js/custom.js"></script>
+</head>
+<body>
+	<div class="wrap-body">
+		<!--header 시작-->
+		<div id="wrap-header">
+			<div class="header-inner clear">
+				<ul class="nav khula clear fl">
+					<li class="fl">
+						<a href="/dashboard.html">DASHBOARD</a>
+					</li>
+					<li class="fl">
+						<a href="/account.html">ACCOUNT</a>
+					</li>
+					<li class="fl">
+						<a>CHATROOM</a>
+					</li>
+					<li class="fl on">
+						<a href="/banner.html">BANNER</a>
+					</li>
+					<li class="fl">
+						<a href="/board.html">BOARD</a>
+					</li>
+				</ul>
+				<div class="header-logout fr clear nanum">
+					<p class="show-member fl">
+						<img src="/assets/images/user.svg" class="center-y">
+						<a href="#">관리자 A</a>
+					</p>
+					<button type="submit" class="logout-btn fr">로그아웃</button>
+				</div>
+			</div>
+		</div>
+		<!--header 끝-->
+		<div id="wrap-section" class="clear nanum">
+			<!--lnb 시작-->
+			<ul class="lnb fl">
+				<li class="on">
+					<a href="/banner.html">배너광고신청</a>
+				</li>
+				<li>
+					<a href="banner_sub.html">배너관리</a>
+				</li>
+			</ul>
+			<!--lnb 끝-->
+			<!--panel 시작-->
+			<div class="panel fl">
+				<h2>배너광고신청</h2>
+				<div class="banner-box">
+					<!--banner-box 상단 시작-->
+					<ul class="banner-tap-menu clear fl">
+						<li class="check-all">전체선택</li>
+						<li class="check-del">선택삭제</li>
+					</ul>
+					<form method="post" class="clear fr">
+						<select class="fl">
+							<option selected="selected" disabled>검색조건</option>
+							<option value="회사명">회사명</option>
+							<option value="신청자아이디">신청자아이디</option>
+						</select>
+						<div class="input-group clear fr">
+							<input type="text" value="" class="form-control search-box">
+								<button type="submit" class="btn btn-primary">
+									<img src="/assets/images/search.svg">
+								</button>
+						</div>
+					</form>
+					<!--banner-box 상단 끝-->
+					<!--banner table 시작-->
+					<div class="panel-body">
+						<table class="banner-table">
+							<thead>
+								<tr>
+									<th></th>
+									<th>신청일시</th>
+									<th>회사명</th>
+									<th>신청자아이디</th>
+									<th>국가</th>
+									<th>결제여부</th>
+									<th>상태</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<input type="checkbox" name="checkRow">
+									</td>
+									<td>2018.04.05 19:19:19</td>
+									<td>UUNIO</td>
+									<td>joon</td>
+									<td>대한민국</td>
+									<td class="payment">미결제</td>
+									<td class="state"></td>
+									<td>
+										<a href="/banner_ad_page.html" class="banner-ad-btn">
+											<span class="banner-ad-btn">상세보기</span>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" name="checkRow">
+									</td>
+									<td>2018.04.05 19:19:19</td>
+									<td>DAILY TOKEN</td>
+									<td>moon</td>
+									<td>일본</td>
+									<td class="payment">결제완료</td>
+									<td class="state">광고중</td>
+									<td>
+										<a href="/banner_ad_page.html" class="banner-ad-btn">
+											<span class="banner-ad-btn">상세보기</span>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" name="checkRow">
+									</td>
+									<td>2018.04.05 19:19:19</td>
+									<td>OH MY OPPA</td>
+									<td>jinny</td>
+									<td>중국</td>
+									<td class="payment">결제완료</td>
+									<td class="state">광고대기</td>
+									<td>
+										<a href="/banner_ad_page.html" class="banner-ad-btn">
+											<span class="banner-ad-btn">상세보기</span>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" name="checkRow">
+									</td>
+									<td>2018.04.05 19:19:19</td>
+									<td>UUNIO</td>
+									<td>joon</td>
+									<td>중국</td>
+									<td class="payment">-</td>
+									<td class="state"></td>
+									<td>
+										<a href="/banner_ad_page.html" class="banner-ad-btn">
+											<span class="banner-ad-btn">상세보기</span>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--banner table 끝-->
+				</div>
+<!--
+				<ul class="page-num clear center-x">
+					<li>&#60</li>
+					<li class="on">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>></li>
+				</ul>
+-->
+			</div>
+			<!--banner-box 끝-->
+			<!--banner-ad-page 시작
+			<div class="banner-ad-page center-x">
+				<div class="banner-ad-box">
+					<h2>배너광고신청</h2>
+					<div class="pay-state">미결제</div>
+						<table class="profile-top clear">
+							<tr>
+								<td>아이디</td>
+								<td>joon</td>
+								<td>이메일주소</td>
+								<td>joon@email.com</td>
+							</tr>
+							<tr>
+								<td>회사명</td>
+								<td>UUNIO</td>
+								<td>국가</td>
+								<td>대한민국</td>
+							</tr>
+							<tr>
+								<td>이름</td>
+								<td>이준우</td>
+								<td>연락처</td>
+								<td>01012341234</td>
+							</tr>
+						</table>
+						<table class="ad-table">
+							<tr>
+								<td>광고링크URL</td>
+								<td class="ad-url">http://uun.io</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>광고이미지</td>
+								<td class="ad-img">
+									<img>
+									<a href="" class="download" onclick="downloadImg()" download>다운로드</a>
+								</td>
+								<td>사업자등록증</td>
+								<td class="ad-img">
+									<img>
+									<a href="" class="download" onclick="downloadImg()" download>다운로드</a>
+								</td>
+							</tr>
+						</table>
+					<div class="btn-section center-x clear">
+						<button type="submit" class="confirm-pay fl">결제완료</button>
+						<a href="/banner_sub_manage.html" class="gotoAd">광고게시</a>
+						<button type="button" onclick="window.location.reload()" class="fl gotoList">닫기</button>
+					</div>
+				</div>
+			</div>
+			banner-ad-page 끝-->
+			<!--결제완료 팝업 시작-->
+			<div class="popup_btn2 confirm-pay-popup center-x">
+				<p>
+					결제가 완료되었습니까?
+				</p>
+				<button type="submit" class="confirm-pay-btn">결제완료</button>
+				<button type="button" class="close-popup">취소</button>
+			</div>
+			<!--결제완료 팝업 끝-->
+		</div>
+		<div id="wrap-footer">
+			<div class="footer-inner khula">
+				<p>Copyright.</p>
+			</div>
+		</div>
+	</div>
+</body>

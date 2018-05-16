@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>CLET_admin</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CLET">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:secure_url" content="">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:description” content=“" />
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="CLET">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:domain" content="CLET">
+    <meta property="twitter:image" content="">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/">
+    <link rel="stylesheet" href="/assets/css/banner_style.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/dist/script.min.js"></script>
+    <script type="text/javascript" src="/assets/js/custom.js"></script>
+</head>
+<body>
+	<div class="wrap-body">
+		<!--header 시작-->
+		<div id="wrap-header">
+			<div class="header-inner clear">
+				<ul class="nav khula clear fl">
+					<li class="fl">
+						<a href="/dashboard.html">DASHBOARD</a>
+					</li>
+					<li class="fl">
+						<a href="/account.html">ACCOUNT</a>
+					</li>
+					<li class="fl">
+						<a>CHATROOM</a>
+					</li>
+					<li class="fl on">
+						<a href="/banner.html">BANNER</a>
+					</li>
+					<li class="fl">
+						<a href="/board.html">BOARD</a>
+					</li>
+				</ul>
+				<div class="header-logout fr clear nanum">
+					<p class="show-member fl">
+						<img src="/assets/images/user.svg" class="center-y">
+						<a href="#">관리자 A</a>
+					</p>
+					<button type="submit" class="logout-btn fr">로그아웃</button>
+				</div>
+			</div>
+		</div>
+		<!--header 끝-->
+		<div id="wrap-section" class="clear nanum">
+			<!--lnb 시작-->
+			<ul class="lnb fl">
+				<li>
+					<a href="/banner.html">배너광고신청</a>
+				</li>
+				<li class="on">
+					<a href="banner_sub.html">배너관리</a>
+				</li>
+			</ul>
+			<!--lnb 끝-->
+			<!--panel 시작-->
+			<div class="panel fl">
+				<h2>배너관리</h2>
+				<!--banner-regbox-->
+				<div class="banner-regbox nanum">
+					<h3>배너2</h3>
+					<h4>광고주 정보</h4>
+					<form>
+						<ul class="clear">
+							<li>
+								<p class="list-head fl">아이디</p>
+								<div class="input-search fr">
+									<input type="text" title="아이디" class="ad-id">
+									<button type="submit" title"아이디 검색" class="search">
+										<img src="/assets/images/search.svg">
+									</button>
+								</div>
+							</li>
+							<li>
+								<p class="list-head fl">이메일</p>
+								<div class="input-search fr">
+									<input type="text" title="이메일" class="ad-email">
+									<button type="submit" title"아이디 검색" class="search">
+										<img src="/assets/images/search.svg">
+									</button>
+								</div>
+							</li>
+							<li>
+								<p class="list-head fl">회사명</p>
+								<input type="text" title="회사명" class="ad-com fr">
+							</li>
+							<li>
+								<p class="list-head fl">국가</p>
+								<select class="fr">
+									<option selected disabled>국가를 선택하세요</option>
+									<option>국가1</option>
+									<option>국가2</option>
+									<option>국가3</option>
+									<option>국가4</option>
+									<option>국가5</option>
+									<option>국가6</option>
+									<option>국가7</option>
+									<option>국가8</option>
+								</select>
+							</li>
+							<li>
+								<p class="list-head fl">이름</p>
+								<input type="text" title="이름" class="input-name fr">
+							</li>
+							<li>
+								<p class="list-head fl">연락처</p>
+								<input type="number" title="연락처" class="input-number fr">
+							</li>
+						</ul>
+						<h4>광고정보</h4>
+						<ul class="ad-info-box clear">
+							<li>
+								<p class="list-head fl">광고시작일</p>
+								<input type="date" class="input-date fr">
+							</li>
+							<li>
+								<p class="list-head fl">광고종료일</p>
+								<input type="date" class="input-date fr">
+							</li>
+							<li>
+								<p class="list-head fl">링크 URL</p>
+								<input type="text" title="링크url" class="input-url fl">
+							</li>
+							<li>
+								<p class="list-head fl">이미지업로드</p>
+								<div class="input-img-box fileBox2 fl clear">
+									<input type="text" class="fileName2 fl" readonly="readonly">
+									<input type="file" title="이미지업로드" id="uploadBtn2" class="uploadBtn2 input-img fl">
+								</div>
+								<p>사이즈 가로 1440 X 세로 552 / 해상도 720dpl 이상</p>
+							</li>
+						</ul>
+						<div class="btn-section">
+							<button type="button" class="register">등록하기</button>
+								<a href="/banner_sub.html">취소</a>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!--banner-box 끝-->
+			<!--배너등록 팝업 시작-->
+			<div class="popup_btn2 confirm-banner-popup center-x">
+				<p>
+					<span id="banner-name">배너2</span>에 해당 내용을 게시하시겠습니까?
+				</p>
+				<button type="submit" class="confirm-banner-btn close-popup">확인</button>
+				<button type="button" class="close-popup">취소</button>
+			</div>
+			<!--배너등록 팝업 끝-->
+		</div>
+		<div id="wrap-footer">
+			<div class="footer-inner khula">
+				<p>Copyright.</p>
+			</div>
+		</div>
+	</div>
+</body>

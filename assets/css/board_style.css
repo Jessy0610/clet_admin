@@ -1,0 +1,145 @@
+@charset "utf-8";
+/***reset***/
+@import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css'); 
+@import url('https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css');
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@font-face{ 
+    font-family:'TruenoBlk';
+    src: url('../font/TruenoBlk.otf');
+    src: lpcal('../font/TruenoBlk.otf');
+    src: local('☺'),
+    url('../font/TruenoBlk.otf') format('otf'),
+    url('../font/TruenoBlk.otf') format('truetype');
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin-right:0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    overflow-x: hidden;
+ 
+}
+ol, ul, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+p, h1, h2, li a{font-style :normal;
+  font-stretch: normal;
+  line-height: normal;
+    letter-spacing: normal;}
+input{border:0; }
+a{color:black; text-decoration: none;}
+.clear:after{content:""; display:block; clear: both;}
+.fl{float:left;}
+.fr{float:right;}
+.nanum{font-family:'NanumSquare'}
+.gothic{font-family:'Nanum Gothic'}
+.khula{font-family: 'Lato', sans-serif;}
+.noto{font-family:"Noto Sans TC",'Lato', sans-serif;}
+.noto-sim{font-family:"Noto Sans SC",'Lato', sans-serif;}
+.center-x{position:absolute; left:50%; transform:translatex(-50%);}
+.center-y{position:absolute; top:50%; transform:translatey(-50%);}
+.center-all{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);}
+.fw300{font-weight:300;}
+.fw-normal{font-weight:normal;}
+.fw500{font-weight:500;}
+.fw-bold{font-weight:bold;}
+.fw-700{font-weight:700;}
+.fw-800{font-weight:800;}
+.fw-900{font-weight:900;}
+/***reset 끝***/
+html,body{width:100%; height:100%;}
+.wrap-body{width:100%; height:960px; position:relative;}
+/*header 시작*/
+#wrap-header{width:100%; height:80px; background-color: #34a9ff;}
+#wrap-header .header-inner{width:1140px; height:100%; margin:0 auto;}
+#wrap-header .header-inner ul{width: 600px; height: 100%;}
+#wrap-header .header-inner li{width:120px; height: 100%;}
+#wrap-header .header-inner li a{display:block; width: 100%; height: 100%; line-height:80px; text-align:center; color:#fff; transition:0.4s;}
+#wrap-header .header-inner li a:hover{background-color: #fff; color:#34a9ff;}
+#wrap-header .header-inner li.on{background-color: #fff;}
+#wrap-header .header-inner li.on a{color:#34a9ff;}
+#wrap-header .header-inner .header-logout{width: 200px;height: 100%;}
+#wrap-header .header-inner .header-logout p{position:relative; width: 80px;line-height: 80px; text-align:right;}
+#wrap-header .header-inner .header-logout p a{font-size:14px;color:#fff;}
+#wrap-header .header-inner .header-logout p img{width:20px; height: 20px; left:0;}
+#wrap-header .header-inner .header-logout button{width:80px; height: 40px; margin-top:20px; background-color: #fff; font-size:12px; color:#34a9ff; border-radius:4px; cursor:pointer;}
+/*header 끝*/
+#wrap-section{position:relative; width: 1140px; height:800px; margin:0 auto; background-color:rgba(52, 169, 255, 0.1);}
+/*lnb 시작*/
+#wrap-section .lnb{width: 120px; height:100%;padding-top:60px; background-color:#fff;}
+#wrap-section .lnb li{width:100%; height:20px; margin-bottom:20px; text-align: center;}
+#wrap-section .lnb li a{display:block; height:100%; font-size:14px; font-weight:bold; color:#9d9d9d;}
+#wrap-section .lnb li.on a{color:#34a9ff;}
+/*lnb 끝*/
+/*panel 시작*/
+#wrap-section .panel{position:relative; width: 1020px; height:800px; box-sizing:border-box; padding:60px 20px;}
+#wrap-section .panel h2{margin-bottom:20px; box-sizing:border-box; padding-left:20px; font-size:24px; font-weight:bold; color:#3d3d3d;}
+#wrap-section .board-box{width: 100%; height: 700px; box-sizing:border-box; padding:20px 40px; background-color: #fff; border:2px solid #efefef;}
+/*board-box 상단 시작*/
+#wrap-section .board-box .board-tap-menu{height:30px; line-height:30px;}
+#wrap-section .board-box .board-tap-menu li{float:left; width:110px; text-align: center; text-decoration:underline; font-size:16px; color:#9d9d9d; border-right:2px solid #efefef; cursor:pointer;}
+#wrap-section .board-box .board-tap-menu li:hover{color:#34a9ff;}
+#wrap-section .board-box .board-tap-menu li.on{color:#34a9ff;}
+#wrap-section .board-box .board-tap-menu li:last-child{border-right:none;}
+/*board-box 상단 끝*/
+#wrap-section .panel-body{width: 100%; height: 500px; margin-top:60px;}
+/*panel 끝*/
+/*terms-section 시작*/
+#wrap-section .panel .terms-section{margin:50px; width:400px;}
+#wrap-section .panel .terms-section li{width: 100%; margin-bottom:50px; font-size:18px; font-weight:bold; color:#999;}
+#wrap-section .panel .terms-section li p{line-height:40px;}
+#wrap-section .panel .terms-section li button{width: 120px; height:40px; font-size:14px; color:#9d9d9d; background-color: #fff; border:2px solid #9d9d9d; border-radius:4px; cursor:pointer;}
+/*terms-section 끝*/
+/*terms-edit-box 시작*/
+#wrap-section .panel .terms-edit-box{position:absolute; top:40px; left:40px; width:940px; height:600px; padding:40px 0; background-color: #fff; display:none;}
+#wrap-section .panel .terms-edit-box h2{margin:20px 0; text-align: center; font-size:20px; font-weight:bold; color:#3d3d3d;}
+#wrap-section .panel .terms-edit-box textarea{position:absolute; transform:translatex(-50%); left:50%; border:2px solid #9d9d9d; border-radius:4px;}
+#wrap-section .panel .terms-edit-box .button-section{width:300px; height:50px; bottom:40px;}
+#wrap-section .panel .terms-edit-box .button-section button{width:80px; height:30px; font-size:12px; font-weight:bold; border:2px solid #9d9d9d; border-radius:4px; background-color: #eee; cursor:pointer;}
+/*terms-edit-box 끝*/
+/*personal-info-edit 시작*/
+#wrap-section .panel .personal-info-edit{position:absolute; top:40px; left:40px; width:940px; height:600px; padding:40px 0; background-color: #fff; display:none;}
+#wrap-section .panel .personal-info-edit h2{margin:20px 0; text-align: center; font-size:20px; font-weight:bold; color:#3d3d3d;}
+#wrap-section .panel .personal-info-edit textarea{position:absolute; transform:translatex(-50%); left:50%; border:2px solid #9d9d9d; border-radius:4px;}
+#wrap-section .panel .personal-info-edit .button-section{width:300px; height:50px; bottom:40px;}
+#wrap-section .panel .personal-info-edit .button-section button{width:80px; height:30px; font-size:12px; font-weight:bold; border:2px solid #9d9d9d; border-radius:4px; background-color: #eee; cursor:pointer;}
+/*personal-info-edit 끝*/
+/*footer 시작*/
+#wrap-footer{position:absolute; width: 100%; height: 80px; bottom:0; background-color: #34a9ff; }
+#wrap-footer .footer-inner{width: 1140px; height: 100%; margin:0 auto;}
+#wrap-footer .footer-inner p{text-align: center; line-height:80px; color:#fff;}
